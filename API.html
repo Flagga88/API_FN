@@ -1,0 +1,63 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head>
+    <title>Film-nördar</title> 
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> <!-- Länkar till en extern CSS-fil -->
+   
+    <link rel="stylesheet" href="main.css"> <!-- Länkar till en lokal CSS-fil -->
+</head>
+<body>
+    
+    <div class="wrapper"> <!-- En wrapper för att gruppera innehåll -->
+       
+        <div class="logo"> <!-- En sektion för logotypen -->
+            <div class="container"> <!-- En behållare för att centrera innehållet -->
+              <p>Film<span>Nörd.</span></p> 
+            </div>
+        </div>
+        
+        <div class="search-container"> <!-- En sektion för sökfunktionen -->
+            <div class="search-element"> <!-- En behållare för sökelementet -->
+                <input type="text" class="form-control" placeholder="Vilken film vill du se?" id="movie-search-box" onkeyup="findMovies()" onclick="findMovies()"> <!-- En sökninginput -->
+                <div class="search-list" id="search-list"> <!-- En behållare för sökresultaten -->
+                </div>
+            </div>
+        </div>
+       
+        <div class="container"> <!-- En behållare för innehållet -->
+            <div class="result-container"> <!-- En behållare för sökresultatet -->
+                <div class="result-grid" id="result-grid"> <!-- En behållare för resultatgriden -->
+                    
+                </div>
+            </div>
+        </div>
+       
+    </div>
+
+
+   
+    <script src="script.js"></script> <!-- Länkar till en JavaScript-fil -->
+</body>
+<footer>
+    <div class="container"> <!-- En behållare för footerelementen -->
+      <div class="row"> <!-- En rad för att dela upp elementen -->
+        <div class="col-md-6"> <!-- En kolumn för området "Om Filmnördar" -->
+          <h4>Om Filmnördar</h4>
+          <p>Filmnördar är en filmströmningstjänst som är dedikerad till att tillhandahålla högkvalitativt innehåll till filmentusiaster. 
+            Med ett stort bibliotek av filmer från alla genrer och länder erbjuder Filmnördar en unik och mångsidig filmtittandeupplevelse.</p> <!-- En beskrivning av Filmnördar -->
+            <p>Gå med nu och få tillgång till exklusiva funktioner som personliga filmrekommendationer och utvalda samlingar handplockade av vårt team av experter.</p> <!-- Fördelar med att gå med -->
+        </div>
+        <div class="col-md-6"> <!-- En kolumn för området "Kontakta oss" -->
+          <h4>Kontakta oss</h4> 
+          <ul> 
+            <li>Email: info@filmnordar.com</li> 
+            <li>Phone: 076-454-34-34</li> 
+            <li>Address: NTI kronhuss</li> 
+            <img src="https://www.freeiconspng.com/uploads/popcorn-png-3.png" class="footer-img"> 
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</html>
